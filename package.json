@@ -1,0 +1,58 @@
+{
+  "name": "learn",
+  "version": "0.0.1",
+  "description": "learning quasar ui for vue 3",
+  "productName": "Quasar App",
+  "author": "Sabeur Mohammed Amin <sabeurmohammedamin@gmail.com>",
+  "private": true,
+  "scripts": {
+    "test": "echo \"See package.json => scripts for available tests.\" && exit 0",
+    "test:unit": "jest --updateSnapshot",
+    "test:unit:ci": "jest --ci",
+    "test:unit:coverage": "jest --coverage",
+    "test:unit:watch": "jest --watch",
+    "test:unit:watchAll": "jest --watchAll",
+    "serve:test:coverage": "quasar serve test/jest/coverage/lcov-report/ --port 8788",
+    "concurrently:dev:jest": "concurrently \"quasar dev\" \"jest --watch\""
+  },
+  "dependencies": {
+    "@jest/globals": "^27.4.6",
+    "@quasar/extras": "^1.0.0",
+    "@testing-library/jest-dom": "^5.16.1",
+    "@testing-library/vue": "^6.4.2",
+    "axios": "^0.21.1",
+    "core-js": "^3.6.5",
+    "n": "^8.0.2",
+    "quasar": "^2.0.0",
+    "quasar-cli": "^0.17.26",
+    "stable": "^0.1.8",
+    "uuid": "^8.3.2",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.1"
+  },
+  "devDependencies": {
+    "@quasar/app": "^3.0.0",
+    "@quasar/quasar-app-extension-testing": "^2.0.2",
+    "@quasar/quasar-app-extension-testing-unit-jest": "^3.0.0-alpha.8",
+    "babel-jest": "^27.4.6",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.4.7",
+    "workbox-webpack-plugin": "^6.4.2"
+  },
+  "browserslist": [
+    "last 10 Chrome versions",
+    "last 10 Firefox versions",
+    "last 4 Edge versions",
+    "last 7 Safari versions",
+    "last 8 Android versions",
+    "last 8 ChromeAndroid versions",
+    "last 8 FirefoxAndroid versions",
+    "last 10 iOS versions",
+    "last 5 Opera versions"
+  ],
+  "engines": {
+    "node": ">= 12.22.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

@@ -1,0 +1,54 @@
+/* app global css */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* reset the default css value of quasar */
+.app-list div.q-field__control.no-wrap{
+  padding: 0 5px;
+}
+.q-img__content > div{
+  padding: 10px;
+}
+
+
+/**
+ * ----------------------------------------
+ * About Scroll Barre of the Description
+ * ----------------------------------------
+ */
+.overflowAuto::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+.overflowAuto::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.overflowAuto::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.overflowAuto::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/**
+ * ----------------------------------------
+ * END Scroll Barre of the Description
+ * ----------------------------------------
+ */
+
+.bg-gradient{
+  background: linear-gradient(-70deg, rgba(22, 223, 218, 0.2) 0%, rgba(3, 69, 255, 0.2) 60%, rgba(3, 69, 255, 0.2) 80%, rgba(142, 34, 167, 0.2) 100%);
+  backdrop-filter: blur(15px) brightness(110%);
+}
+.bg-grad{
+  background: linear-gradient(-70deg, rgba(22, 223, 218, 0.8) 0%, rgba(3, 69, 255, 0.8) 60%, rgba(3, 69, 255, 0.8) 80%, rgba(142, 34, 167, 0.8) 100%);
+  backdrop-filter: blur(15px) brightness(110%);
+}
+.scroll-class .q-scrollarea__content{
+  width: 100%;
+}
